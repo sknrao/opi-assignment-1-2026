@@ -8,9 +8,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "llm_transcript.json")
-UPLOAD = os.path.expanduser(
-    "~/.cursor/projects/Users-adityasarna-Aditya-Sarna-lfx-task1/uploads/llm_transcript-L1-L555-0.json"
-)
+UPLOAD = os.path.join(ROOT, "llm_transcript.json")
 
 
 def polish_user(text: str) -> str:
