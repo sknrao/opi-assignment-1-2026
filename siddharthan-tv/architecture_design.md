@@ -1,7 +1,7 @@
 # Architecture Design: Bringing NVIDIA DPF Under the OPI DPU Operator
 
 **Assignment:** LLM-Assisted Architecture Design for OPI DPU Operator
-**Author:** Siddharth
+**Author:** Siddharthan T V
 **Date:** July 2026
 
 **Methodology note:** Everything cited from `openshift/dpu-operator` and
