@@ -1,0 +1,14 @@
+apiVersion: opi.io/v1alpha1
+kind: DPUSet
+metadata:
+  name: prod-nvidia-dpu-cluster-dpuset
+  namespace: default
+  labels:
+    opi.io/managed-by: opi-nvidia-adapter
+    opi.io/cluster: prod-nvidia-dpu-cluster
+spec:
+  dpuNodeSelector:
+    hardware: bluefield-3
+    cluster-role: worker
+  bfb: "http://firmware.internal/bluefield/bfb-v3.0.bfb"
+  flavor: "high-throughput-networking"

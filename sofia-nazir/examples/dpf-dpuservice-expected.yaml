@@ -1,0 +1,12 @@
+apiVersion: opi.io/v1alpha1
+kind: DPUService
+metadata:
+  name: prod-nvidia-dpu-cluster-dpuservice
+  namespace: default
+  labels:
+    opi.io/managed-by: opi-nvidia-adapter
+    opi.io/cluster: prod-nvidia-dpu-cluster
+spec:
+  serviceType: network
+  config: '{"mode": "ovn-kubernetes", "vpc": "production-vpc"}'
+  dpuSetName: prod-nvidia-dpu-cluster-dpuset

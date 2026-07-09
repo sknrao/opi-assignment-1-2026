@@ -1,0 +1,14 @@
+apiVersion: opi.io/v1alpha1
+kind: DPUCluster
+metadata:
+  name: prod-nvidia-dpu-cluster
+  namespace: default
+spec:
+  vendor: nvidia
+  bfb: "http://firmware.internal/bluefield/bfb-v3.0.bfb"
+  dpuFlavor: "high-throughput-networking"
+  networkOffloadMode: "ovn-kubernetes"
+  vpcName: "production-vpc"
+  nodeSelector:
+    hardware: bluefield-3
+    cluster-role: worker
